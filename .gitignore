@@ -1,0 +1,5 @@
+.eggs
+.idea
+.tox
+*.egg-info
+*.iml
