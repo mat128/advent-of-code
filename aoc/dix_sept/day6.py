@@ -15,6 +15,7 @@ def redist_until_already_seen_twice(blocks):
 
         seen.append(blocks)
 
+
 def redist_until_already_seen(blocks):
     seen = []
 
@@ -24,9 +25,11 @@ def redist_until_already_seen(blocks):
             return len(seen) + 1
         seen.append(blocks)
 
+
 def redistribute(original_blocks):
-    blocks = original_blocks[:]
+    blocks = list(original_blocks)
     max_block, max_block_value = max(enumerate(blocks), key=operator.itemgetter(1))
+
     blocks[max_block] = 0
     offset = 1
 

@@ -6,6 +6,7 @@ from aoc.dix_sept.day6 import redistribute, redist_until_already_seen, redist_un
 
 blocks = [int(b) for b in "4	1	15	12	0	9	9	5	5	8	7	3	14	5	12	3".split()]
 
+
 class Day6Test(unittest.TestCase):
     def test_example(self):
             a = [0, 2, 7, 0]
